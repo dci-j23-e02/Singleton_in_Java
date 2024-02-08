@@ -4,7 +4,11 @@ public final class Singleton {
 private  static Singleton instance;
 private  String value;
 
-// a private Contractor
+  public String getValue() {
+    return value;
+  }
+
+  // a private Contractor
   private Singleton(String v){
     try{
       Thread.sleep(1000); // 1 second
