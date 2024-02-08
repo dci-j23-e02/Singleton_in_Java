@@ -24,7 +24,7 @@ public final class Singleton {
     */
 
     // Local variable ´result´:
-    Singleton result = instance;
+    Singleton result = instance; // Optimizing the read performance of a 'volatile' variable
 
     // First Check :
     if(result != null){
